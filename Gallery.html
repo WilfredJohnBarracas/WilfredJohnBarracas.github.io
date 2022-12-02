@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Gallery</title>
+
+        <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+            background-color: #495057;
+        }
+
+        #banner {
+            background: url(Images/Banne.png);
+            height: 90px;
+            background-repeat: no-repeat;
+        }
+
+        .Nav-right {
+            display: flex;
+            justify-content: center;
+            background-color: #adb5bd ;
+            margin: 0px;
+        }
+
+        
+        ul{
+            margin: 0px;
+            padding: 0px;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+            font-size: 30px;
+            padding: 7px 15px 7px 15px;
+        }
+
+        .navi {
+            margin: 0 35px 0 35px;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a, dropbtn{
+            display: inline-block;
+            text-decoration: none;
+        }
+
+        li a:hover, .dropdown:hover .dropbtn{
+            background-color: #ced4da   ;
+        }
+
+        li.dropdown {
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #e9ecef;
+            min-width: 130px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #f8f9fa;
+        }
+
+        .dropdown:hover .dropdown-content {
+        display: block;
+        }
+
+        #footer {
+            text-align: center;
+            background-color: #dee2e6;
+            left: 0;
+            bottom: 0;
+            position: fixed;
+            width: 100%;
+        }
+
+        #footer p {
+            padding: 0px;
+            margin: 3px 0 0 0 ;
+        }
+
+        #Icons {
+            width: 30px;
+            padding: 3px;
+        }
+
+        #Icons:hover {
+            width: 29px;
+        }
+
+        #PF {
+            text-decoration: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .content {
+            display: flex;
+        }
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: auto;
+            text-align: center;
+        }
+
+        .content::before {
+            content: '';
+            background-image: url(Images/cool.jpg);
+            background-size: contain;
+            position: absolute;
+            height: 3100px;
+            top: 138px;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            opacity: 0.6;
+        }
+
+        .content h1 {
+            position: relative;
+        }
+
+        .container img{
+            width: 250px;
+            padding: 20px;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            border: 1px solid black;
+            margin-top: 30px;
+            width: 1000px;
+            position: relative;
+            background-color: white;
+        }
+        
+
+        .container p {
+            width: 700px;
+            font-size: 30px;
+        }
+
+        #One {
+            height: 250px;
+        }
+
+        </style>
+    </head>
+    <body>
+        <div id="banner">
+        </div>
+
+        <div class="Nav-right">
+            <ul>
+                <li class="dropdown"><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a class="navi" href="javascript:void(0)" class="dropbtn">Personal</a>
+                    <div class="dropdown-content">
+                        <a href="PersonalData.html">Personal Data</a>
+                        <a href="AboutMe.html">About Me</a>
+                        <a href="Interest.html">Interest</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a class="navi" href="javascript:void(0)" class="dropbtn">Education</a>
+                    <div class="dropdown-content">
+                        <a href="GradeSchool.html">Grade School</a>
+                        <a href="HighSchool.html">High Schoool</a>
+                        <a href="College.html">College</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a class="navi" href="javascript:void(0)" class="dropbtn">Family</a>
+                    <div class="dropdown-content">
+                        <a href="Parents.html">Parents</a>
+                        <a href="SpecialSomeone.html">Special Someone</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a class="navi" href="javascript:void(0)" class="dropbtn">Friends</a>
+                    <div class="dropdown-content">
+                        <a href="School.html">School</a>
+                        <a href="Hangouts.html">Hangouts</a>
+                    </div>
+                </li>
+                <li class="dropdown"><a href="Gallery.html">Gallery</a></li>
+                <li class="dropdown">
+                    <a class="navi" href="javascript:void(0)" class="dropbtn">IT122 Activities</a>
+                    <div class="dropdown-content">
+                        <a href="MP's/MP1 by Barracas.html" target="_blank">MP1</a>
+                        <a href="MP's/MP2 by Barracas.html" target="_blank">MP2</a>
+                        <a href="MP's/MP3 by Barracas.html" target="_blank">MP3</a>
+                        <a href="MP's/MP4 by Barracas.html" target="_blank">MP4</a>
+                        <a href="MP's/MP5 by Barracas.html" target="_blank">MP5</a>
+                        <a href="MP's/MP6 by Barracas.html" target="_blank">MP6</a>
+                        <a href="MP's/MP7 by Barracas.html" target="_blank">MP7</a>
+                    </div>
+                </li>
+            </ul>
+         </div>
+
+         <div class="content">
+            <h1>Gallery</h1>
+            <div class="container">
+                    <div>
+                    <img src="Images/Sun1.jpg">
+                    <img id="One" src="Images/Sun2.jpg">
+                    <img src="Images/Sun3.jpg">
+                    </div>
+                    <p>I took this sunsets whenever i feel like going outside for a walk.
+                         I took this random photos of the sun while it's setting
+                        just because i love how beautiful it is.
+                    </p>
+            </div>    
+
+            <div class="container">
+                    <div>
+                    <img id="One" src="Images/Ap1.jpg">
+                    <img id="One" src="Images/Ap2.jpg">
+                    </div>
+                    <p>These are pictures that i took when we travelled back to our province, Aparri, Cagayan. The 
+                        smell of the ocean makes me calm, and the sound of the waves are soothing. 
+                    </p>
+            </div>
+
+            <div class="container">
+                    <div>
+                    <img id="One" src="Images/Dog1.jpg">
+                    <img id="One" src="Images/Dog2.jpg">
+                    <img id="One" src="Images/Dog3.jpg">
+                    </div>
+                    <p>Here are some photos of me and my dogs. I haven't included the three others for i do not have 
+                        pictures of them. Our first dog which is in the middle is Pluto. He died like 5years ago. 
+                        next is Venus which is still with us. She had a son named Neptune but, he's not with us anymore.
+                        But the dog on the left is her son also, his name is Kaiser. On the right photo his name is miguel
+                        and he's also dead now. The other dog is named Copper, he just died this november because of a disease
+                        we do not know what.
+                    </p>
+            </div>
+
+            <div class="container">
+                <div>
+                <img id="One" src="Images/Bike1.jpg">
+                <img id="One" src="Images/Bike2.jpg">
+                <img id="One" src="Images/Bike3.jpg">
+                </div>
+                <p>Hera are some photos of me when i travel using my bicycle. The places that i have travelled are Cavite (Kaybiang Tunnel), 
+                    Rizal(Antipolo, Pilila), and many more. Riding bike is awesome! it makes me feel calm, it helps me 
+                    have clear thougths. 
+                </p>
+            </div>
+
+            <div class="container">
+                <div>
+                <img id="One" src="Images/Cat2.jpg">
+                <img id="One" src="Images/Cat1.jpg">
+                <img id="One" src="Images/Cat3.jpg">
+                </div>
+                <p>These photos are taken when i was in high school specifically 10th grade. These are photos when i am a 
+                    CAT officer or Citizenship Advancement Training officer. We had some photos with Senator. Peter Allan
+                    Cayetano. The photo in the middle is in city of dreams when we marched as Color guards during a celebration
+                    of a brotherhoood.
+                </p>
+            </div>
+         </div>
+
+         <div id="footer">
+            <p>Hello I am Wilfred John Barracas. I created this website for my school use.</p>
+            <p>Connect with me here</p>
+            <a id="PF" href="https://www.facebook.com/wilfredjohn.barracas.1/" target="_blank"><img id="Icons" src="Images/fb-icon.png"></a>
+            <a id="PF" href="https://github.com/WilfredJohnBarracas" target="_blank"><img id="Icons" src="Images/Github-icon.png"></a>
+            <a id="PF" href="https://www.instagram.com/fredmatss/" target="_blank"><img id="Icons" src="Images/Inst-icon.jpg"></a>
+         </div>
+    </body>
+</html>

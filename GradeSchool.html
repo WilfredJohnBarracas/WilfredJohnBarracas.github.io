@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Grade School</title>
+
+        <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+            background-color: #495057;
+        }
+
+        #banner {
+            background: url(Images/Banne.png);
+            height: 90px;
+            background-repeat: no-repeat;
+        }
+
+        #Keris {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        #Keris::before {
+                content: '';
+                background-image: url(Images/Keris.jpg);
+                background-size: cover;
+                position: absolute;
+                height: 700px;
+                top: 138px;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                opacity: 0.3;
+        }
+
+        #Ker-Logo {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        #Ker-sc {
+            padding: 0px;
+            margin: 5px;
+            font-size: 50px;
+            position: relative;
+            color: white;
+        }
+
+        #Ker-D {
+            position: relative;
+            color: white;
+            width: 900px;
+            font-size: 25px;
+        }
+
+        #Ker-desc {
+            text-align: center;
+        }
+
+        #Logo {
+            padding: 0;
+            margin: 0 0 0 0px;
+            position: relative;
+            width: 300px;
+        }
+
+        #Logo:hover {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            border-radius: 100%;
+            transition: 0.3s;
+            overflow: hidden;
+        }
+
+        .Nav-right {
+            display: flex;
+            justify-content: center;
+            background-color: #adb5bd ;
+            margin: 0px;
+        }
+
+        ul{
+            margin: 0px;
+            padding: 0px;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+            font-size: 30px;
+            padding: 7px 15px 7px 15px;
+        }
+
+        .navi {
+            margin: 0 35px 0 35px;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a, dropbtn{
+            display: inline-block;
+            text-decoration: none;
+        }
+
+        li a:hover, .dropdown:hover .dropbtn{
+            background-color: #ced4da   ;
+        }
+
+        li.dropdown {
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #e9ecef;
+            min-width: 130px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #f8f9fa;
+        }
+
+        .dropdown:hover .dropdown-content {
+        display: block;
+        }
+
+        #footer {
+            text-align: center;
+            background-color: #dee2e6;
+            left: 0;
+            bottom: 0;
+            position: fixed;
+            width: 100%;
+        }
+
+        #footer p {
+            padding: 0px;
+            margin: 3px 0 0 0 ;
+        }
+
+        #Icons {
+            width: 30px;
+            padding: 3px;
+        }
+
+        #Icons:hover {
+            width: 29px;
+        }
+
+        #PF {
+            text-decoration: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .Slider-frame {
+            overflow: hidden;
+            height: 250px;
+            width: 400px;
+            margin-left: 0px;
+            margin-top: 30px;
+        }
+
+        @-webkit-keyframes slide_animation{
+            0% {left: 0px;}
+            10% {left: 0px;}
+            20% {left: 400px;}
+            30% {left: 400px;}
+            40% {left: 800px;}
+            50% {left: 800px;}
+            60% {left: 400px;}
+            70% {left: 400px;}
+            80% {left: 0px;}
+            90% {left: 0px;}
+            100% {left: 0px;}
+        }
+
+        .slide-images {
+            width: 1200px;
+            height: 250px;
+            margin: 0 0 0 -800px;
+            position: relative;
+            -webkit-animation-name: slide_animation;
+            -webkit-animation-duration: 33s;
+            -webkit-animation-iteration-count: infinite;
+            -webkit-animation-direction: alternate;
+            -webkit-animation-play-state: running;
+        }
+
+        .img-container {
+            height: 300px;
+            width: 400px;
+            position: relative;
+            float: left;
+        }
+
+        .Ker-me {
+            width: 400px    ;
+        }
+
+        </style>
+    </head>
+    <body>
+        <div id="banner">
+        </div>
+
+        <div class="Nav-right">
+            <ul>
+                <li class="dropdown"><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a class="navi" href="javascript:void(0)" class="dropbtn">Personal</a>
+                    <div class="dropdown-content">
+                        <a href="PersonalData.html">Personal Data</a>
+                        <a href="AboutMe.html">About Me</a>
+                        <a href="Interest.html">Interest</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a class="navi" href="javascript:void(0)" class="dropbtn">Education</a>
+                    <div class="dropdown-content">
+                        <a href="GradeSchool.html">Grade School</a>
+                        <a href="HighSchool.html">High Schoool</a>
+                        <a href="College.html">College</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a class="navi" href="javascript:void(0)" class="dropbtn">Family</a>
+                    <div class="dropdown-content">
+                        <a href="Parents.html">Parents</a>
+                        <a href="SpecialSomeone.html">Special Someone</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a class="navi" href="javascript:void(0)" class="dropbtn">Friends</a>
+                    <div class="dropdown-content">
+                        <a href="School.html">School</a>
+                        <a href="Hangouts.html">Hangouts</a>
+                    </div>
+                </li>
+                <li class="dropdown"><a href="Gallery.html">Gallery</a></li>
+                <li class="dropdown">
+                    <a class="navi" href="javascript:void(0)" class="dropbtn">IT122 Activities</a>
+                    <div class="dropdown-content">
+                        <a href="MP's/MP1 by Barracas.html" target="_blank">MP1</a>
+                        <a href="MP's/MP2 by Barracas.html" target="_blank">MP2</a>
+                        <a href="MP's/MP3 by Barracas.html" target="_blank">MP3</a>
+                        <a href="MP's/MP4 by Barracas.html" target="_blank">MP4</a>
+                        <a href="MP's/MP5 by Barracas.html" target="_blank">MP5</a>
+                        <a href="MP's/MP6 by Barracas.html" target="_blank">MP6</a>
+                        <a href="MP's/MP7 by Barracas.html" target="_blank">MP7</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div id="Keris">
+            <div id="Ker-Logo">
+                <a id="Logo-li" href="https://www.facebook.com/OfficialKERIS/" target="_blank"><img id="Logo" src="Images/Keris-Logo.png"></a>
+                <div class="Slider-frame">
+                    <div class="slide-images">
+                        <div class="img-container">
+                            <img class="Ker-me" src="Images/Elem1.jpg">
+                        </div>
+                        <div class="img-container">
+                            <img class="Ker-me" src="Images/Elem2.jpg">
+                        </div>
+                        <div class="img-container">
+                            <img class="Ker-me" src="Images/Elem3.jpg">
+                        </div>
+                        <div class="img-container">
+                            <img class="Ker-me" src="Images/Elem4.jpg">
+                        </div>
+                        <div class="img-container">
+                            <img class="Ker-me" src="Images/Elem5.jpg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="Ker-desc">    
+                <h1 id="Ker-sc">Kapitan Eddie T. Reyes Integrated School</h1>
+                <p id="Ker-D">Graduated Elementary on 2017 at before; Kapitan Eddie T. Reyes Memorial Elementary School (Kermes).
+                    The school is located at Pinagsama Village, Phase 2, Taguig, Metro Manila. The school is originally for Kinder
+                    and elementary students. Now, they also accommodate junior high and Senior high Students. Now the school's name
+                    is Kapitan Eddie T. Reyes Integrated School (Keris).
+                </p>
+            </div>
+        </div>>
+
+        <div id="footer">
+            <p>Hello I am Wilfred John Barracas. I created this website for my school use.</p>
+            <p>Connect with me here</p>
+            <a id="PF" href="https://www.facebook.com/wilfredjohn.barracas.1/" target="_blank"><img id="Icons" src="Images/fb-icon.png"></a>
+            <a id="PF" href="https://github.com/WilfredJohnBarracas" target="_blank"><img id="Icons" src="Images/Github-icon.png"></a>
+            <a id="PF" href="https://www.instagram.com/fredmatss/" target="_blank"><img id="Icons" src="Images/Inst-icon.jpg"></a>
+         </div>
+    </body>
+</html>

@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>About Me</title>
+
+        <style>
+            body {
+                margin: 0px;
+                padding: 0px;
+                background-color: #495057;
+            }
+
+            #banner {
+            background: url(Images/Banne.png);
+            height: 90px;
+            background-repeat: no-repeat;
+            }
+
+            .Nav-right {
+                display: flex;
+                justify-content: center;
+                background-color: #adb5bd ;
+                margin: 0px;
+            }
+
+            #content{
+                display: flex;
+                justify-content: center;
+                padding: 0px;
+                margin-top: 155px;
+            }
+
+            #content::before {
+                content: '';
+                border: 2px solid black;
+                position: absolute;
+                top: 250px;
+                left: 120px;
+                bottom: 0;
+                right: 120px;
+                background-color: white;
+                opacity: 0.5;
+            }
+
+            #cover {
+                display: flex;
+                justify-content: center;
+            }
+
+            #cover::before {
+                content: '';
+                background-image: url(Images/cool.jpg);
+                background-size: cover;
+                position: absolute;
+                height: 700px;
+                top: 138px;
+                left: 0;
+                right: 0;
+                bottom: 0;
+            }
+
+            .desc-me {
+                padding: 0px;
+                margin: 10px 0 0 0;
+                width: 700px;
+                position: relative;
+            }
+
+            .sc {
+                margin: 0px;
+                padding: 8px 0 0 0 ;
+                font-size: 31px;
+                position: relative;
+
+            }
+
+            #Ab {
+                margin: 0px;
+                padding: 20px 0 0 0 ;
+                font-size: 28px;
+                position: relative;
+
+            }
+
+            #Name{
+                padding: 0;
+                margin: 0;
+                font-size: 50px;
+                position: relative;
+
+            }
+
+            #ID {
+                width: 250px;
+                border: 2px solid black;
+                margin: 20px;
+                position: relative;
+
+            }
+
+            ul{
+                margin: 0px;
+                padding: 0px;
+            }
+
+            a {
+                text-decoration: none;
+                color: black;
+                font-size: 30px;
+                padding: 7px 15px 7px 15px;
+            }
+
+            .navi {
+                margin: 0 35px 0 35px;
+                color: black;
+            }
+
+            li {
+                float: left;
+            }
+
+            li a, dropbtn{
+                display: inline-block;
+                text-decoration: none;
+            }
+
+            li a:hover, .dropdown:hover .dropbtn{
+                background-color: #ced4da   ;
+            }
+
+            li.dropdown {
+                display: inline-block;
+            }
+
+            .dropdown-content {
+                display: none;
+                position: absolute;
+                background-color: #e9ecef;
+                min-width: 130px;
+                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                z-index: 1;
+            }
+
+            .dropdown-content a {
+                color: black;
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+                text-align: left;
+            }
+
+            .dropdown-content a:hover {
+                background-color: #f8f9fa;
+            }
+
+            .dropdown:hover .dropdown-content {
+            display: block;
+            }
+
+            #footer {
+                text-align: center;
+                background-color: #dee2e6;
+                left: 0;
+                bottom: 0;
+                position: fixed;
+                width: 100%;
+            }
+
+            #footer p {
+            padding: 0px;
+            margin: 3px 0 0 0 ;
+            }
+
+            #Icons {
+                width: 30px;
+                padding: 3px;
+            }
+
+            #Icons:hover {
+            width: 29px;
+            }
+
+            #PF {
+            text-decoration: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        </style>
+    </head>
+    <body>
+        <div id="banner">
+        </div>
+
+        <div class="Nav-right">
+            <ul>
+                <li class="dropdown"><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a class="navi" href="javascript:void(0)" class="dropbtn">Personal</a>
+                    <div class="dropdown-content">
+                        <a href="PersonalData.html">Personal Data</a>
+                        <a href="AboutMe.html">About Me</a>
+                        <a href="Interest.html">Interest</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a class="navi" href="javascript:void(0)" class="dropbtn">Education</a>
+                    <div class="dropdown-content">
+                        <a href="GradeSchool.html   ">Grade School</a>
+                        <a href="HighSchool.html">High Schoool</a>
+                        <a href="College.html">College</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a class="navi" href="javascript:void(0)" class="dropbtn">Family</a>
+                    <div class="dropdown-content">
+                        <a href="Parents.html">Parents</a>
+                        <a href="SpecialSomeone.html">Special Someone</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a class="navi" href="javascript:void(0)" class="dropbtn">Friends</a>
+                    <div class="dropdown-content">
+                        <a href="School.html">School</a>
+                        <a href="Hangouts.html">Hangouts</a>
+                    </div>
+                </li>
+                <li class="dropdown"><a href="Gallery.html">Gallery</a></li>
+                <li class="dropdown">
+                    <a class="navi" href="javascript:void(0)" class="dropbtn">IT122 Activities</a>
+                    <div class="dropdown-content">
+                        <a href="MP's/MP1 by Barracas.html" target="_blank">MP1</a>
+                        <a href="MP's/MP2 by Barracas.html" target="_blank">MP2</a>
+                        <a href="MP's/MP3 by Barracas.html" target="_blank">MP3</a>
+                        <a href="MP's/MP4 by Barracas.html" target="_blank">MP4</a>
+                        <a href="MP's/MP5 by Barracas.html" target="_blank">MP5</a>
+                        <a href="MP's/MP6 by Barracas.html" target="_blank">MP6</a>
+                        <a href="MP's/MP7 by Barracas.html" target="_blank">MP7</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div id="cover">
+            <div id="content">
+                <img id="ID"src="Images/ID_Cute.jpg">
+                <div class="desc-me">
+                    <h1 id="Name">Wilfred John M. Barracas</h1>
+                    <h3 class="sc">1st Year - Bachelor of Science in Computer Science</h3>
+                    <h3 class="sc">Arellano University: Jose Abad Santos Campus</h3>
+                    <p id="Ab">Welcome to my site! I am Wilfred John Barracas. I am currently a 1st year Bachelor of Science Major in Computer
+                        Science student in Arellano University: Jose Abad Santos Campus, Pasay City.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div id="footer">
+            <p>Hello I am Wilfred John Barracas. I created this website for my school use.</p>
+            <p>Connect with me here</p>
+            <a id="PF" href="https://www.facebook.com/wilfredjohn.barracas.1/" target="_blank"><img id="Icons" src="Images/fb-icon.png"></a>
+            <a id="PF" href="https://github.com/WilfredJohnBarracas" target="_blank"><img id="Icons" src="Images/Github-icon.png"></a>
+            <a id="PF" href="https://www.instagram.com/fredmatss/" target="_blank"><img id="Icons" src="Images/Inst-icon.jpg"></a>
+         </div>
+    </body>
+</html>
